@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header'
+import Hero from '../components/Hero'
+import Features from '../components/Features'
+import Articles from '../components/Articles'
+import Footer from '../components/Footer'
+---
+
+<Layout title="Easybank">
+	<main class="z-20">
+		<Header client:load />
+		<Hero client:load />
+		<Features />
+		<Articles />
+		<Footer />
+	</main>
+</Layout>
